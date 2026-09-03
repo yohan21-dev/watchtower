@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Composer
+composer.phar
+/composer.lock
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log
+/logs/
+
+# PHP
+*.cache
+
+# Local database dumps (avoid accidentally committing real camera IPs/creds)
+*.sql.bak
+/database/*.local.sql
