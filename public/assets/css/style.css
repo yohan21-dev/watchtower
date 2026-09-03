@@ -45,13 +45,15 @@ a { color: inherit; text-decoration: none; }
     letter-spacing: 0.3px;
 }
 
-.brand .mark {
-    background: var(--sti-yellow);
-    color: var(--sti-blue-dark);
-    font-weight: 800;
-    padding: 0.2rem 0.5rem;
-    border-radius: 6px;
-    font-size: 1rem;
+.brand-logo {
+    height: 32px;      /* scales the 800x69 image down proportionally */
+    width: auto;
+    display: block;
+}
+
+.login-card .brand-logo {
+    height: 40px;       /* slightly larger on the login card */
+    margin: 0 auto;
 }
 
 .brand small {

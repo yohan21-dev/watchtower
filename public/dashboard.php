@@ -16,14 +16,14 @@ $wsUrl = Config::get('WS_PUBLIC_URL', 'ws://localhost:8080');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard · STI CCTV Portal</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=<?= filemtime(__DIR__ . '/assets/css/style.css') ?>">
 <script>const STI_WS_URL = <?= json_encode($wsUrl) ?>;</script>
 </head>
 <body>
 
 <div class="topbar">
     <div class="brand">
-        <span class="mark">STI</span>
+        <img src="assets/img/sti-cubao-logo.png" alt="STI" class="brand-logo">
         <span>CCTV Portal<br><small>Hikvision camera access</small></span>
     </div>
     <div class="topbar-right">
